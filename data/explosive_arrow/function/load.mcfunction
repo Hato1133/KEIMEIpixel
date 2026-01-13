@@ -1,0 +1,1 @@
+tellraw @a [{"text":"[爆発矢] ロード完了！ 毎tick自動監視開始","color":"green","bold":true}]
