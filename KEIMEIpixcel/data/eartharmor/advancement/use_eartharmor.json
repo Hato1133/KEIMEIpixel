@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "use_eartharmor": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+        "predicates":{
+          "minecraft:custom_data":{
+            "ib":{
+              "Id":"eartharmor"
+            }
+          }
+        }
+      }
+    }
+  }
+},
+  "rewards":{
+   "function": "eartharmor:activate_earth"
+         }
+}
