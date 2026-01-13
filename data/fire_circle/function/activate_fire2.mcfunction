@@ -1,0 +1,1 @@
+execute as @a at @s run execute as @e[type=minecraft:marker,sort=nearest,limit=1] run tag @s add fire_circle_marker
