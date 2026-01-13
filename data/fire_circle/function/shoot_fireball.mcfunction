@@ -1,0 +1,1 @@
+execute as @e[type=minecraft:fireball,tag=fire_circle_marker] at @s run tp @s ^ ^ ^1
