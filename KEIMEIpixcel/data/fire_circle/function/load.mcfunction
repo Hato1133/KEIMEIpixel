@@ -1,0 +1,1 @@
+scoreboard objectives add fire_circle_load dummy
