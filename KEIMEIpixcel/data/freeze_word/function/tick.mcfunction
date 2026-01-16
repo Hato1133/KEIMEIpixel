@@ -1,0 +1,2 @@
+execute as @e[advancements={freeze_word:use_freezesword=true},nbt={SelectedItem:{components:{"minecraft:custom_data":{ib:{Id:"freeze_sword"}}}}}] run say @a components
+bossbar set eat_progress visible true

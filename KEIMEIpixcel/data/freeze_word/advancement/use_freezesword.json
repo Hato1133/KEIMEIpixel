@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "use_freezesword": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+        "predicates":{
+          "minecraft:custom_data":{
+            "ib":{
+              "Id":"freeze_sword"
+            }
+          }
+        }
+      }
+    }
+  }
+},
+  "rewards":{
+   "function": "freeze_word:use_freezesword"
+         }
+}
