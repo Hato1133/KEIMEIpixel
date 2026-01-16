@@ -1,2 +1,0 @@
-execute as @e[type=minecraft:arrow,nbt={inGround:1b,data:{ib:{Id:explosive}}}] at @s run function explosive_arrow:boom
-execute at @e[type=minecraft:arrow,nbt={data:{ib:{Id:explosive}}}] run particle minecraft:firework ~ ~ ~ 1 1 1 0 10
