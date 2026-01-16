@@ -1,0 +1,1 @@
+give @s arrow[minecraft:custom_data={ib:{Id:explosive}},minecraft:lore=[{"text":"着弾時に即爆発し、吹き飛ばす","italic":false},{"text":"自爆注意","color":"red"}],minecraft:item_name={"text":"Explosivearrow","color":"red"},minecraft:enchantment_glint_override=1b]
