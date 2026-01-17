@@ -1,6 +1,6 @@
 #soul
 effect give @e[tag=soul] invisibility 1 1 true
-execute as @e[tag=soul] at @s run particle minecraft:soul_fire_flame ~ ~ ~
+execute as @e[tag=soul] at @s run particle minecraft:soul_fire_flame ~ ~0.5 ~
 effect give @e[tag=soul] strength 1 0 true
 execute as @e[tag=soul] at @s run attribute @s follow_range base set 24
 
