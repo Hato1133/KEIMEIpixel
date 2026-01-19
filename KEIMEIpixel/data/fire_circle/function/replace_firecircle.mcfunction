@@ -1,0 +1,3 @@
+item replace entity @s weapon.mainhand with minecraft:fire_charge[minecraft:use_cooldown={seconds:10},minecraft:custom_data={"ib":{"Id":firecircle}},minecraft:consumable={consume_seconds:0.05,animation:"none",has_consume_particles:false,sound:"minecraft:entity.blaze.shoot"},enchantment_glint_override=1b,minecraft:item_name={"text":"Firecircle","color":"yellow"},minecraft:lore=[{"text":"魔法を飛ばし、火の円を展開する","italic":false},{"text":"クールタイム10秒","italic":false}],minecraft:max_stack_size=1]
+advancement revoke @s only fire_circle:replace_firecircle
+say @s item replaced
