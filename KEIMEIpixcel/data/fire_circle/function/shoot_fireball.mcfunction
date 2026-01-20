@@ -14,3 +14,4 @@ execute as @e[tag=fire_circle_ending,scores={fire_circle_load=230..}] at @s run 
 execute as @e[tag=fire_summoner] at @s run setblock ~ ~ ~ minecraft:fire keep
 execute as @e[tag=fire_summoner,scores={fire_circle_load=10..}] at @s run kill @s
 execute as @e[tag=fire_circle_marker_new,scores={fire_circle_load=400..}] at @s run kill @s
+scoreboard players add @a replace_timer 1
