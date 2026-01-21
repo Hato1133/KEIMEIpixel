@@ -1,0 +1,1 @@
+scoreboard objectives add eartharmor_replace dummy
