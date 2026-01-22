@@ -1,5 +1,6 @@
 {
-  "values": ["fire_circle:load",
+  "values": [
+    "fire_circle:load",
     "freeze_word:load",
     "eartharmor:load",
     "explosive_arrow:tick",
