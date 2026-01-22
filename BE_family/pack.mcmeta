@@ -1,6 +1,7 @@
 {
   "pack": {
-    "pack_format": 94,
-    "description": "BE_family_selector"
+    "description": "BE_family_selector",
+    "min_format": 88.0,
+    "max_format": 94.0
   }
 }
