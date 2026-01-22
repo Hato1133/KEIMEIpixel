@@ -9,7 +9,7 @@ execute as @a[scores={charge_value=10..20}] run title @s[scores={charge_value=10
 execute as @a[scores={charge_value=21..40}] run title @s[scores={charge_value=21..40}] actionbar [{"text":"チャージ中: ","color":"aqua"},{"text":"▉▉□□□□","color":"aqua"}]
 execute as @a[scores={charge_value=41..60}] run title @s[scores={charge_value=41..60}] actionbar [{"text":"チャージ中: ","color":"aqua"},{"text":"▉▉▉□□□","color":"aqua"}]
 execute as @a[scores={charge_value=61..80}] run title @s[scores={charge_value=61..80}] actionbar [{"text":"チャージ中: ","color":"yellow"},{"text":"▉▉▉▉□□","color":"yellow"}]
-execute as @a[scores={charge_value=81..100}] run title @s[scores={charge_value=81..100}] actionbar [{"text":"チャージ中: ","color":"yellow"},{"text":"▉▉▉▉▉","color":"yellow"},{"text":"最大チャージ",color:"yellow"}]
-execute as @a[scores={charge_value=101..120}] run title @s[scores={charge_value=101..120}] actionbar [{"text":"チャージ中: ","color":"red"},{"text":"▉▉▉▉▉▉","color":"red"},{"text":"危険！オーバーロード","color":"red","bold":true}]
+execute as @a[scores={charge_value=81..100}] run title @s[scores={charge_value=81..100}] actionbar [{"text":"チャージ中: ","color":"yellow"},{"text":"▉▉▉▉▉","color":"yellow"},{"text":"最大チャージ","color":"yellow","bold":true}]
+execute as @a[scores={charge_value=101..120}] run title @s[scores={charge_value=101..120}] actionbar [{"text":"チャージ中: ","color":"yellow"},{"text":"▉▉▉▉▉▉","color":"yellow"},{"text":"最大チャージ","color":"yellow","bold":true}]
 execute as @a[scores={charge_value=121..140}] run title @s[scores={charge_value=121..140}] actionbar [{"text":"チャージ中: ","color":"red"},{"text":"▉▉▉▉▉▉▉","color":"red"},{"text":"危険！オーバーロード","color":"red","bold":true}]
 execute as @a[scores={charge_value=..3}] run title @s clear
