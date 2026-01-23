@@ -46,7 +46,3 @@ execute as @e[tag=damaged_overload] run scoreboard players add @s effect_timer 1
 execute as @a[tag=damaged_overload] at @s run particle minecraft:snowflake ~ ~1 ~ 0.5 0.5 0.5 0.02 10 force @a
 execute as @e[tag=damaged_overload,scores={effect_timer=100..}] at @s run tag @s remove damaged_overload
 execute as @e[tag=damaged_overload,scores={effect_timer=100..}] run scoreboard players set @s effect_timer 0
-execute as @a[scores={charge_value=81..100}] run title @s[scores={charge_value=81..100}] actionbar [{"text":"チャージ中: ","color":"yellow"},{"text":"▉▉▉▉▉","color":"yellow"},{"text":"最大チャージ","color":"yellow","bold":true}]
-execute as @a[scores={charge_value=101..120}] run title @s[scores={charge_value=101..120}] actionbar [{"text":"チャージ中: ","color":"yellow"},{"text":"▉▉▉▉▉▉","color":"yellow"},{"text":"最大チャージ","color":"yellow","bold":true}]
-execute as @a[scores={charge_value=121..140}] run title @s[scores={charge_value=121..140}] actionbar [{"text":"チャージ中: ","color":"red"},{"text":"▉▉▉▉▉▉▉","color":"red"},{"text":"危険！オーバーロード","color":"red","bold":true}]
-execute as @a[scores={charge_value=..3}] run title @s clear
