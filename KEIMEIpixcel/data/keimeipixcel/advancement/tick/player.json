@@ -1,0 +1,11 @@
+{
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick",
+      "conditions": {}
+  }
+},
+  "rewards":{
+   "function": "keimeipixcel:entity/player/tick"
+    }
+}

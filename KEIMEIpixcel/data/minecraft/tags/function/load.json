@@ -1,11 +1,7 @@
 {
     "values": 
     [
-        "fire_circle:load",
-        "freeze_word:load",
-        "eartharmor:load",
-        "fire_circle:load",
-        "freeze_word:load",
-        "eartharmor:load"
+        "keimeipixcel:technical/load",
+            "freeze_word:load"
     ]
 }

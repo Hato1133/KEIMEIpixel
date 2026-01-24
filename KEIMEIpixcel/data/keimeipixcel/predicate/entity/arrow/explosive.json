@@ -1,0 +1,9 @@
+{
+    "condition": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "components": {
+            "minecraft:custom_data": "{ib:{Id:\"explosive\"}}"
+        }
+    }
+}

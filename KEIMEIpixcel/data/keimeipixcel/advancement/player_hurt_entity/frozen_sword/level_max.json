@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    ".": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"keimei.frozen_sword.max\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "keimeipixcel:item/frozen_sword/attack/level_max"
+  }
+}

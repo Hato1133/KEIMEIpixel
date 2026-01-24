@@ -1,2 +1,0 @@
-scoreboard objectives add fire_circle_load dummy
-scoreboard objectives add replace_timer dummy

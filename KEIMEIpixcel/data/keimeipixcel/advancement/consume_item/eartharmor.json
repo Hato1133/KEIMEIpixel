@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "use_eartharmor": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+        "predicates":{
+          "minecraft:custom_data":{
+            "ib":{
+              "Id":"eartharmor"
+            }
+          }
+        }
+      }
+    }
+  }
+},
+  "rewards":  {
+   "function": "keimeipixcel:item/eartharmor/consume"
+      }
+}

@@ -22,7 +22,7 @@
       {
         "effect": {
           "type": "minecraft:run_function",
-          "function": "magic:enchant_explode"
+          "function": "magic:item/enchant_explode"
         },
         "enchanted": "attacker",
         "affected": "victim"

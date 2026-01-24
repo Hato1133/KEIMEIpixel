@@ -1,0 +1,7 @@
+execute if score @s keimei.frozen_sword.charge matches 20.. run title @s actionbar [{"text":"チャージ中: ","color":"gray"},{"text":"□□□|□□|□","color":"gray"}]
+execute if score @s keimei.frozen_sword.charge matches 100.. run title @s actionbar [{"text":"チャージ中: ","color":"aqua"},{"text":"▉□□|□□|□","color":"aqua"}]
+execute if score @s keimei.frozen_sword.charge matches 210.. run title @s actionbar [{"text":"チャージ中: ","color":"aqua"},{"text":"▉▉□|□□|□","color":"aqua"}]
+execute if score @s keimei.frozen_sword.charge matches 410.. run title @s actionbar [{"text":"チャージ中: ","color":"aqua"},{"text":"▉▉▉|□□|□","color":"aqua"}]
+execute if score @s keimei.frozen_sword.charge matches 610.. run title @s actionbar [{"text":"チャージ中: ","color":"yellow"},{"text":"▉▉▉|▉□|□","color":"yellow"}]
+execute if score @s keimei.frozen_sword.charge matches 810.. run title @s actionbar [{"text":"チャージ中: ","color":"yellow"},{"text":"▉▉▉|▉▉|□","color":"yellow"},{"text":"最大チャージ",color:"yellow"}]
+execute if score @s keimei.frozen_sword.charge matches 1200.. run title @s actionbar [{"text":"チャージ中: ","color":"red"},{"text":"▉▉▉|▉▉|▉","color":"red"},{"text":"危険！オーバーロード","color":"red","bold":true}]

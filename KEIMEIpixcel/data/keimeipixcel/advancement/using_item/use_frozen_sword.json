@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "use_freezesword": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": {
+          "periodic_tick": 10
+        },
+        "item": {
+        "predicates":{
+          "minecraft:custom_data":{
+            "ib":{
+              "Id":"frozen_sword"
+            }
+          }
+        }
+      }
+    }
+  }
+},
+  "rewards":{
+   "function": "keimeipixcel:item/frozen_sword/use"
+         }
+}
