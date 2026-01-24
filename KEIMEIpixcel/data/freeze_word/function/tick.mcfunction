@@ -1,5 +1,5 @@
-execute as @e[advancements={keimeipixel:use_freezesword=true},nbt={SelectedItem:{components:{"minecraft:custom_data":{ib:{Id:"freeze_sword"}}}}}] run say @a components
-execute as @e[advancements={keimeipixel:use_firecircle=true},nbt=!{SelectedItem:{components:{"minecraft:custom_data":{ib:{Id:"freeze_sword"}}}}}] run advancement revoke @s only keimeipixel:use_freezesword
+execute as @e[advancements={keimeipixel:use_freezesword=true},predicate=keimeipixel:have_freezesword] run say @a components
+execute as @e[advancements={keimeipixel:use_firecircle=true},predicate=!keimeipixel:have_freezesword] run advancement revoke @s only keimeipixel:use_freezesword
 
 scoreboard players remove @a[scores={useingtime=1..}] useingtime 1
 scoreboard players add @a[scores={useingtime=1}] charge_value 1
