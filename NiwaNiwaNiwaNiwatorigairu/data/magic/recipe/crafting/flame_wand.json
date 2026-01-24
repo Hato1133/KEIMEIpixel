@@ -1,0 +1,50 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "  1",
+    " 2 ",
+    "3  "
+  ],
+  "key": {
+    "1": "minecraft:blaze_powder",
+    "2": "minecraft:blaze_rod",
+    "3": "minecraft:stick"
+  },
+  "result": {
+    "id": "minecraft:poisonous_potato",
+    "components": {
+      "minecraft:custom_name": "Flame_Wand",
+      "minecraft:custom_data": {
+        "id": "Flame_Wand"
+      },
+      "minecraft:custom_model_data": {
+        "strings": [
+          "Flame_Wand"
+        ]
+      },
+      "minecraft:lore": [
+        {"color":"#ffffff","text":"魔法発動時範囲攻撃"},
+        {"color":"#ffffff","text":"魔法発動後火炎耐性付与"}
+      ],
+      "minecraft:consumable": {
+        "consume_seconds": 0.05,
+        "animation": "none",
+        "sound": "minecraft:intentionally_empty",
+        "has_consume_particles": false
+      },
+      "minecraft:use_cooldown": {
+        "seconds": 3,
+        "cooldown_group": "flame_wand"
+      },
+      "minecraft:enchantment_glint_override": true,
+      "minecraft:rarity": "rare",
+      "minecraft:food": {
+       "nutrition": 0,
+       "saturation": 0,
+       "can_always_eat": true
+     }
+    },
+    "count": 2
+  }
+}

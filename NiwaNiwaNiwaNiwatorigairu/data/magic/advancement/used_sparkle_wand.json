@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "Used Lightning Ray": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": {
+              "id": "Sparkle_Wand"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "magic:used_sparkle_wand"
+  }
+}

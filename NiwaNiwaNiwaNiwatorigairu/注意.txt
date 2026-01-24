@@ -1,0 +1,7 @@
+必須[custom_data={id:AAA},custom_name=AAA,custom_model_data={strings:[AAA]}]
+順次[enchantment_glint_override: true or false,rearity= rare or epic,attribute_modifiers, consumable, use_cooldown]
+
+攻撃力は基礎攻撃力(1)をattributeで加減算したものを表記
+攻撃速度は基礎攻撃速度(4)をattributeで加減算したものを表記
+
+loot magic:give/AAAでアイテム入手

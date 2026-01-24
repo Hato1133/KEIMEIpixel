@@ -1,0 +1,49 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "  1",
+    " 2 ",
+    "3  "
+  ],
+  "key": {
+    "1": "minecraft:quartz",
+    "2": "minecraft:blaze_rod",
+    "3": "minecraft:stick"
+  },
+  "result": {
+    "id": "minecraft:poisonous_potato",
+    "components": {
+      "minecraft:custom_name": "Sparkle_Wand",
+      "minecraft:custom_data": {
+        "id": "Sparkle_Wand"
+      },
+      "minecraft:custom_model_data": {
+        "strings": [
+          "Sparkle_Wand"
+        ]
+      },
+      "minecraft:lore": [
+        {"text": "魔法発動時前方に波動発射","color": "white"}
+      ],
+      "minecraft:consumable": {
+        "consume_seconds": 0.05,
+        "animation": "none",
+        "sound": "minecraft:intentionally_empty",
+        "has_consume_particles": false
+      },
+      "minecraft:use_cooldown": {
+        "seconds": 0.3,
+        "cooldown_group": "sparkle_wand"
+      },
+      "minecraft:enchantment_glint_override": true,
+      "minecraft:rarity": "rare",
+      "minecraft:food": {
+        "nutrition": 0,
+        "saturation": 0,
+        "can_always_eat": true
+      }
+    },
+    "count": 4
+  }
+}

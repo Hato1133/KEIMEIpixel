@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "111",
+    "122",
+    "22 "
+  ],
+  "key": {
+    "1": "minecraft:amethyst_shard",
+    "2": "minecraft:chain_command_block"
+  },
+  "result": {
+    "id": "minecraft:command_block",
+    "components": {
+      "minecraft:custom_data": {
+        "id": "EvilIngot"
+      },
+      "minecraft:custom_name": "EvilIngot",
+      "minecraft:enchantment_glint_override": true,
+      "minecraft:rarity": "common"
+    },
+    "count": 1
+  }
+}

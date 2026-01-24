@@ -1,0 +1,141 @@
+{
+  "temperature": 0.8,
+  "downfall": 0.2,
+  "has_precipitation": true,
+  "temperature_modifier": "none",
+  "creature_spawn_probability": 0.01,
+  "effects": {
+    "water_color": "#cc0bda",
+    "grass_color": "#0065fc",
+    "foliage_color": "#ba2c2c",
+    "dry_foliage_color": "#acaac3"
+  },
+  "spawners": {
+    "monster": [
+      {
+        "type": "minecraft:vex",
+        "weight": 3,
+        "minCount": 1,
+        "maxCount": 3
+      },
+      {
+        "type": "minecraft:phantom",
+        "weight": 5,
+        "minCount": 1,
+        "maxCount": 2
+      },
+      {
+        "type": "minecraft:guardian",
+        "weight": 10,
+        "minCount": 1,
+        "maxCount": 1
+      }
+    ]
+  },
+  "spawn_costs": {
+    "minecraft:vex": {
+      "energy_budget": 0.9,
+      "charge": 0.5
+    },
+    "minecraft:phantom": {
+      "energy_budget": 0.5,
+      "charge": 0.5
+    },
+    "minecraft:guardian": {
+      "energy_budget": 0.5,
+      "charge": 0.5
+    }
+  },
+  "carvers": [
+    "minecraft:cave",
+    "minecraft:cave_extra_underground"
+  ],
+  "features": [
+    [
+      "minecraft:ore_copper",
+      "minecraft:ore_copper_large",
+      "minecraft:large_dripstone",
+      "minecraft:pointed_dripstone"
+    ],
+    [
+      {
+        "feature": "minecraft:monster_room",
+        "placement": [
+          {
+            "type": "minecraft:biome"
+          },
+          {
+            "type": "minecraft:count",
+            "count": 50
+          },
+          {
+            "type": "minecraft:height_range",
+            "height": {
+              "type": "minecraft:uniform",
+              "min_inclusive": {
+                "absolute": -60
+              },
+              "max_inclusive": {
+                "absolute": 100
+              }
+            }
+          },
+          {
+            "type": "minecraft:in_square"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "feature": "minecraft:fossil_diamonds",
+        "placement": [
+          {
+            "type": "minecraft:count",
+            "count": 1
+          },
+          {
+            "type": "minecraft:height_range",
+            "height": {
+              "type": "minecraft:uniform",
+              "min_inclusive": {
+                "absolute": -60
+              },
+              "max_inclusive": {
+                "absolute": 20
+              }
+            }
+          },
+          {
+            "type": "minecraft:in_square"
+          },
+          {
+            "type": "minecraft:rarity_filter",
+            "chance": 2
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "feature": "minecraft:bamboo_vegetation",
+        "placement": [
+          {
+            "type": "minecraft:biome"
+          },
+          {
+            "type": "minecraft:count",
+            "count": 1
+          },
+          {
+            "type": "minecraft:heightmap",
+            "heightmap": "WORLD_SURFACE_WG"
+          },
+          {
+            "type": "minecraft:in_square"
+          }
+        ]
+      }
+    ]
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "description": "Explode",
+  "supported_items": [
+    "minecraft:mace"
+  ],
+  "weight": 1,
+  "max_level": 3,
+  "min_cost": {
+    "base": 4,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 24,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 4,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "magic:enchant_explode"
+        },
+        "enchanted": "attacker",
+        "affected": "victim"
+      },
+      {
+        "effect": {
+          "type": "minecraft:explode",
+          "attribute_to_user": true,
+          "immune_blocks": "#minecraft:blocks_wind_charge_explosions",
+          "knockback_multiplier": {
+            "type": "minecraft:linear",
+            "base": 1,
+            "per_level_above_first": 0.1
+          },
+          "radius": 2.5,
+          "create_fire": false,
+          "block_interaction": "none",
+          "small_particle": {
+            "type": "minecraft:poof"
+          },
+          "large_particle": {
+            "type": "minecraft:explosion"
+          },
+          "sound": "minecraft:entity.generic.explode"
+        },
+        "enchanted": "attacker",
+        "affected": "victim"
+      }
+    ],
+    "minecraft:knockback": [
+      {
+        "effect": {
+          "type": "minecraft:set",
+          "value": {
+            "type": "minecraft:linear",
+            "base": 0.5,
+            "per_level_above_first": 0.1
+          }
+        }
+      }
+    ]
+  }
+}
