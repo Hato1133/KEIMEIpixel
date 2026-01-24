@@ -11,7 +11,7 @@
                             "function": "minecraft:set_components",
                             "components": {
                                 "!minecraft:jukebox_playable": {},
-                                "minecraft:item_model": "minecraft:diamond",
+                                "minecraft:item_model": "minecraft:arrow",
                                 "minecraft:custom_data": "{ib:{Id:\"explosive\"}}",
                                 "minecraft:lore": [
                                     {
