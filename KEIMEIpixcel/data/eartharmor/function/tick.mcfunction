@@ -1,3 +1,3 @@
 scoreboard players add @a eartharmor_replace 1
-item replace entity @a[scores={eartharmor_replace=2..},tag=eartharmor_user] weapon.mainhand with minecraft:diamond[minecraft:max_stack_size=1,minecraft:consumable={consume_seconds:0.05,animation:"none",has_consume_particles:false,sound:"minecraft:entity.experience_orb.pickup"},minecraft:use_cooldown={seconds:20},minecraft:custom_data={ib:{Id:eartharmor}},minecraft:item_name="Eartharmor",minecraft:lore=[{"text":"耐性Lv.3,鈍化Lv.3","italic":false},{"text":"継続時間10秒","italic":false},{"text":"クールタイム20秒","italic":false}],minecraft:enchantment_glint_override=1b,minecraft:food={nutrition:0,saturation:0,can_always_eat:true}]
+loot give @a[scores={eartharmor_replace=2..},tag=eartharmor_user] loot keimeipixel:items/eartharmor
 tag @a[tag=eartharmor_user,scores={eartharmor_replace=2..}] remove eartharmor_user

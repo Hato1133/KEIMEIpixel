@@ -6,3 +6,4 @@ execute as @e[tag=damaged_81-140,distance=..8,type=!player] run damage @s 10 fre
 execute as @e[tag=damaged_81-140,distance=..8,type=!player] at @s run fill ~ ~ ~ ~ ~2 ~ minecraft:blue_ice keep
 execute as @e[tag=damaged_81-140,distance=..8,type=!player] at @s run summon marker ~ ~ ~ {Tags:["freeze_sword_ice_marker"]}
 playsound entity.breeze.wind_burst master @a ~ ~ ~ 10 1 0.5 
+playsound block.glass.break master @a ~ ~ ~ 10 1 0.5
