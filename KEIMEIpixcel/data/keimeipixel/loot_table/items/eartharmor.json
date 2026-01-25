@@ -36,10 +36,12 @@
                                     },
                                     {
                                         "text": "継続時間10秒",
+                                        "color": "aqua",
                                         "italic": false
                                     },
                                     {
                                         "text": "クールタイム20秒",
+                                        "color": "aqua",
                                         "italic": false
                                     }
                                 ],

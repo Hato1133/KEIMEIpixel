@@ -30,6 +30,7 @@
                                     },
                                     {
                                         "text": "右クリックでチャージ開始",
+                                        "color": "gold",
                                         "italic": false
                                     }
                                 ],

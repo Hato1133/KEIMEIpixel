@@ -16,6 +16,6 @@
   }
 },
   "rewards":{
-   "function": "fire_circle:replace_firecircle"
+   "function": "keimeipixel:fire_circle/replace_firecircle"
          }
 }

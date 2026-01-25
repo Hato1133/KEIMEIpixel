@@ -15,6 +15,6 @@
       }
     },
   "rewards": {
-    "function":"explosive_arrow:on_arrow_hit"
+    "function":"keimeipixel:explosive_arrow/on_arrow_hit"
   }
 }

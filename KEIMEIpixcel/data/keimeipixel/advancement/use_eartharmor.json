@@ -16,6 +16,6 @@
   }
 },
   "rewards":{
-   "function": "eartharmor:activate_earth"
+   "function": "keimeipixel:eartharmor/activate_earth"
          }
 }

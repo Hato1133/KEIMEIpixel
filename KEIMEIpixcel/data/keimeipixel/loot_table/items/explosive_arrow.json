@@ -20,6 +20,7 @@
                                     },
                                     {
                                         "text": "自爆注意",
+                                        "italic": false,
                                         "color": "red"
                                     }
                                 ],

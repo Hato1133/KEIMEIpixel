@@ -1,21 +1,21 @@
 {
   "criteria": {
-    "use_freezesword": {
+    "use_eartharmor": {
       "trigger": "minecraft:using_item",
       "conditions": {
         "item": {
         "predicates":{
           "minecraft:custom_data":{
             "ib":{
-              "Id":"freeze_sword"
+              "Id":"pure_area"
             }
-          }
+        }
         }
       }
     }
   }
 },
   "rewards":{
-   "function": "keimeipixel:freeze_sword/use_freezesword"
+   "function": "keimeipixel:eartharmor/activate_earth"
          }
 }
