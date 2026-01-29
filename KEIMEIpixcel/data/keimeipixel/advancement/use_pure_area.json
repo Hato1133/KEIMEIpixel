@@ -1,6 +1,6 @@
 {
   "criteria": {
-    "use_eartharmor": {
+    "activate_pure_area": {
       "trigger": "minecraft:using_item",
       "conditions": {
         "item": {
