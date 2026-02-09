@@ -1,0 +1,34 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:arrow",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "!minecraft:jukebox_playable": {},
+                                "minecraft:item_model": "minecraft:arrow",
+                                "minecraft:custom_data": "{ib:{Id:\"ender_arrow\"}}",
+                                "minecraft:lore": [
+                                    {
+                                        "text": "着弾時、着弾地点にテレポートする",
+                                        "italic": false
+                                    }
+                                ],
+                                "minecraft:item_name": {
+                                    "text": "Ender Arrow",
+                                    "color": "light_purple"
+                                },
+                                "minecraft:enchantment_glint_override": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
