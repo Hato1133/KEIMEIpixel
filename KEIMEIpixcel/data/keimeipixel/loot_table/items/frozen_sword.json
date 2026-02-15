@@ -34,6 +34,7 @@
                                         "italic": false
                                     }
                                 ],
+                                
                                 "minecraft:item_name": {"text":"FreezeSword","color":"aqua"},
                                 "minecraft:enchantment_glint_override": true
                             }

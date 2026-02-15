@@ -9,5 +9,5 @@ execute as @e[type=armor_stand,tag=pure_area_center,scores={effect_timer=100..30
 execute as @e[type=armor_stand,tag=pure_area_center,scores={effect_timer=100..300}] at @s run particle happy_villager ~ ~ ~ 0 20 0 500 3 force @a
 execute as @e[type=armor_stand,tag=pure_area_center,scores={effect_timer=300}] at @s run kill @s 
 scoreboard players add @a[scores={pure_used=0..}] pure_used 1
-execute as @a if score @s pure_used matches 2.. run function keimeipixel:pure_area/reset
+execute as @a if score @s pure_used matches 2.. at @s run function keimeipixel:pure_area/reset
 execute as @e[type=marker,tag=summon_success,scores={effect_timer=200..}] run kill @s

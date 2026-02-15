@@ -20,7 +20,7 @@
                                 },
                                 "minecraft:consumable": {
                                     "consume_seconds": 5,
-                                    "animation": "none",
+                                    "animation": "bow",
                                     "has_consume_particles": false,
                                     "sound": "minecraft:entity.experience_orb.pickup"
                                 },
