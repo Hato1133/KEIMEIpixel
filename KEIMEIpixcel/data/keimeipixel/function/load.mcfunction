@@ -5,3 +5,4 @@ scoreboard objectives add fire_circle_load dummy
 scoreboard objectives add replace_timer dummy
 scoreboard objectives add ender_arrow_PID dummy
 scoreboard objectives add pure_area_timer dummy
+scoreboard objectives add meteor_shower_temp dummy
