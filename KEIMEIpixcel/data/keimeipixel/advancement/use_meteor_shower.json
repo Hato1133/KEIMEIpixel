@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "use_meteor_shower": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+        "predicates":{
+          "minecraft:custom_data":{
+            "ib":{
+              "Id": "meteor_shower"
+            }
+          }
+        }
+      }
+    }
+  }
+},
+  "rewards":{
+   "function": "keimeipixel:meteor_shower/use_meteor_shower"
+         }
+}

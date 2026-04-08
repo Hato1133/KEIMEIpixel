@@ -42,7 +42,7 @@
                                 ],
                                 "minecraft:item_name": {
                                     "text": "Fire Circle",
-                                    "color": "yellow"
+                                    "color": "red"
                                 },
                                 "minecraft:enchantment_glint_override": true
                             }

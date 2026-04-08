@@ -5,11 +5,13 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:diamond_sword",
+                    "name": "minecraft:music_disc_11",
                     "functions": [
                         {
                             "function": "minecraft:set_components",
                             "components": {
+                                "!minecraft:jukebox_playable": {},
+                                "minecraft:item_model": "minecraft:magma_block",
                                 "minecraft:max_stack_size": 1,
                                 "minecraft:food": {
                                     "nutrition": 0,
@@ -17,25 +19,34 @@
                                     "can_always_eat": true
                                 },
                                 "minecraft:consumable": {
-                                    "consume_seconds": 2147483647,
-                                    "animation": "crossbow",
+                                    "consume_seconds": 0.05,
+                                    "animation": "none",
                                     "has_consume_particles": false,
-                                    "sound":"minecraft:entity.snow_golem.hurt"
+                                    "sound": "entity.egg.throw"
                                 },
-                                "minecraft:custom_data": "{ib:{Id:\"freeze_sword\"}}",
+
+                                "minecraft:custom_data": "{ib:{Id:\"meteor_shower\"}}",
                                 "minecraft:lore": [
                                     {
-                                        "text": "チャージの長さに応じて効果が変わる魔法の剣",
+                                        "text": "隕石の雨を降らせる",
                                         "italic": false
                                     },
                                     {
-                                        "text": "右クリックでチャージ開始",
-                                        "color": "gold",
+                                        "text": "継続時間5秒",
+                                        "color": "aqua",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "クールタイム20秒",
+                                        "color": "aqua",
                                         "italic": false
                                     }
                                 ],
-                                
-                                "minecraft:item_name": {"text":"FreezeSword","color":"aqua"},
+                                "minecraft:item_name": [{
+                                    "text": "Meteor Shower",
+                                    "color": "red"
+                                }
+                            ],
                                 "minecraft:enchantment_glint_override": true
                             }
                         }

@@ -1,0 +1,1 @@
+execute as @a[nbt={active_effects:[{id:"minecraft:luck",amplifier:10b}]}] at @s anchored eyes run function keimeipixel:meteor_shower/use_meteor_shower
