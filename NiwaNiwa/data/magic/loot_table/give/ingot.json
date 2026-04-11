@@ -1,0 +1,75 @@
+{
+  "type": "minecraft:selector",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chain_command_block",
+          "conditions": [],
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "id": "CherryIngot"
+                },
+                "minecraft:custom_model_data": {
+                  "floats": [],
+                  "strings": [
+                    "CherryIngot"
+                  ]
+                },
+                "minecraft:custom_name": "CherryIngot",
+                "minecraft:rarity": "common"
+              },
+              "conditions": []
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_count",
+          "count": 64
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:command_block",
+          "conditions": [],
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "id": "EvilIngot"
+                },
+                "minecraft:custom_model_data": {
+                  "floats": [],
+                  "strings": [
+                    "EvilIngot"
+                  ]
+                },
+                "minecraft:custom_name": "EvilIngot",
+                "minecraft:rarity": "common"
+              },
+              "conditions": []
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_count",
+          "count": 64
+        }
+      ]
+    }
+  ]
+}

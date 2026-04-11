@@ -1,0 +1,62 @@
+{
+  "type": "minecraft:selector",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:poisonous_potato",
+          "conditions": [],
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:consumable": {
+                  "consume_seconds": 0.05,
+                  "animation": "none",
+                  "sound": "minecraft:intentionally_empty",
+                  "has_consume_particles": false
+                },
+                "minecraft:custom_data": {
+                  "id": "Sparkle_Wand"
+                },
+                "minecraft:custom_model_data": {
+                  "floats": [],
+                  "strings": [
+                    "Sparkle_Wand"
+                  ]
+                },
+                "minecraft:custom_name": "Sparkle_Wand",
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:food": {
+                  "nutrition": 0,
+                  "saturation": 0,
+                  "can_always_eat": true
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "魔法発動時前方に波動発射",
+                    "color": "white"
+                  }
+                ],
+                "minecraft:rarity": "rare",
+                "minecraft:use_cooldown": {
+                  "seconds": 0.3,
+                  "cooldown_group": "minecraft:sparkle_wand"
+                }
+              },
+              "conditions": []
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_count",
+          "count": 64
+        }
+      ]
+    }
+  ]
+}

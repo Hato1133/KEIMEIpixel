@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "Used Clam Wand": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": {
+              "id": "Calm_Wand"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "magic:used_calm_wand"
+  }
+}

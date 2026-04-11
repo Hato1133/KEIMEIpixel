@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "Evil Axe Killed Entity": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "items": "minecraft:diamond_axe",
+              "components": {
+                "minecraft:custom_data": {
+                  "id": "Evil_Axe"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "magic:evil_axe_killed"
+  }
+}
