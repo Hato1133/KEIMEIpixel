@@ -14,4 +14,4 @@ Give_EnchantedItems
 /give @s AAA[enchantments={"magic:BBB":1~255}]
 
 Give_EvilSword(Test)
-/give @s diamond_sword[custom_data={id:Evil_Sword},custom_name=Evil_Sword,custom_model_data={strings:[Evil_Sword]}]
+/give @p diamond_sword[custom_data={id:"Evil_Sword"},custom_name="Evil_Sword",custom_model_data={strings:["Evil_Sword"]},consumable={consume_seconds:100000000,animation:"none",sound:"minecraft:intentionally_empty",has_consume_particles:false,animation:block}]
