@@ -4,6 +4,14 @@
 攻撃力は基礎攻撃力(1)をattributeで加減算したものを表記
 攻撃速度は基礎攻撃速度(4)をattributeで加減算したものを表記
 
-loot magic:give/AAAでアイテム入手
+Give_NewItems
+/loot give @s loot magic:give/AAA
 
+Give_NewBlocks
 /give @s chicken_spawn_egg[custom_model_data={strings:["Example"]},entity_data={id:"minecraft:marker",Tags:["Set_Example"]}]
+
+Give_EnchantedItems
+/give @s AAA[enchantments={"magic:BBB":1~255}]
+
+Give_EvilSword(Test)
+/give @s diamond_sword[custom_data={id:Evil_Sword},custom_name=Evil_Sword,custom_model_data={strings:[Evil_Sword]}]
