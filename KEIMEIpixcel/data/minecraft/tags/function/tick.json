@@ -7,6 +7,10 @@
     "keimeipixel:explosive_arrow/tick",
     "keimeipixel:pure_area/tick",
     "keimeipixel:ender_arrow/ender_arrow_tick",
-    "keimeipixel:load"
+    "keimeipixel:load",
+    "keimeipixel:meteor_shower/set_velocity",
+    "keimeipixel:pvp/matching/matching",
+    "keimeipixel:pvp/start/count_down",
+    "keimeipixel:players/sneak"
   ]
 }
