@@ -1,0 +1,1 @@
+/give @s AAA[enchantments={"magic:BBB":1~255}]
