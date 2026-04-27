@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "reapers_scythe": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+        "predicates":{
+          "minecraft:custom_data":{
+            "ib":{
+              "Id":"reapers_scythe"
+            }
+          }
+        }
+      }
+    }
+  }
+},
+  "rewards":{
+   "function": "keimeipixel:reapers_scythe/useing_reapers_scythe"
+         }
+}

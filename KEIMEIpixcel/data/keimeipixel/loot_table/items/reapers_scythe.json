@@ -1,0 +1,62 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:music_disc_11",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "!minecraft:jukebox_playable": {},
+                                "minecraft:item_model": "minecraft:netherite_hoe",
+                                "minecraft:max_stack_size": 1,
+                                "minecraft:food": {
+                                    "nutrition": 0,
+                                    "saturation": 0,
+                                    "can_always_eat": true
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 0.05,
+                                    "animation": "none",
+                                    "has_consume_particles": false,
+                                    "sound": "entity.egg.throw"
+                                },
+
+                                "minecraft:custom_data": "{ib:{Id:\"reapers_scythe\"}}",
+                                "minecraft:lore": [
+                                    {
+                                        "text": "命を刈り取る邪気あふれる鎌",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "右クリックで空中ダッシュ",
+                                        "color":"gold",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "クールタイム5秒",
+                                        "color": "aqua",
+                                        "italic": false
+                                    }
+                                ],
+                                "minecraft:item_name": [{
+                                    "text": "Reapers Scythe",
+                                    "color": "dark_red"
+                                }
+                            ],
+                                "minecraft:use_cooldown": {
+                                    "seconds": 5,
+                                    "cooldown_group": "reapers_scythe_cd"
+                                },
+                                "minecraft:enchantment_glint_override": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

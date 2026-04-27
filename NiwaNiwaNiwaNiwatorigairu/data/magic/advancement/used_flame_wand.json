@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "Used Flame Wand": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": {
+              "id": "Flame_Wand"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "magic:used_flame_wand"
+  }
+}

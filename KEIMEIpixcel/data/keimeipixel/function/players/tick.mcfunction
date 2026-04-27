@@ -1,0 +1,2 @@
+execute as @a[scores={sneaknow=1}] at @s if block ~ ~-1 ~ minecraft:waxed_oxidized_copper_grate run function keimeipixel:players/ability/penetration_block
+execute as @a[nbt={OnGround:1b}] at @s if block ~ ~-1 ~ minecraft:lapis_block run function keimeipixel:players/ability/wind_block

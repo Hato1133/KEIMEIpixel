@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:jigsaw",
+  "biomes": [
+    "minecraft:beach",
+    "minecraft:warm_ocean",
+    "minecraft:lukewarm_ocean",
+    "magic:biome_inverted_sea"
+  ],
+  "step": "surface_structures",
+  "terrain_adaptation": "none",
+  "spawn_overrides": {
+    "water_creature": {
+      "bounding_box": "piece",
+      "spawns": []
+    }
+  },
+  "start_pool": "magic:rocky_shore",
+  "size": 2,
+  "start_height": {
+    "type": "minecraft:uniform",
+    "min_inclusive": {
+      "absolute": 54
+    },
+    "max_inclusive": {
+      "absolute": 58
+    }
+  },
+  "max_distance_from_center": 80,
+  "use_expansion_hack": false
+}

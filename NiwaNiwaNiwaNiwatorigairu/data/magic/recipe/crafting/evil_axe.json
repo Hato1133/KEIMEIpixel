@@ -1,0 +1,86 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "11 ",
+    "123",
+    " 2 "
+  ],
+  "key": {
+    "1": "minecraft:command_block",
+    "2": "minecraft:stick",
+    "3": "minecraft:gold_ingot"
+  },
+  "result": {
+    "id": "minecraft:diamond_axe",
+    "components": {
+      "minecraft:custom_data": {
+        "id": "Evil_Axe"
+      },
+      "minecraft:custom_name": "Evil_Axe",
+      "minecraft:custom_model_data": {
+        "strings": [
+          "Evil_Axe"
+        ]
+      },
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:attack_damage",
+          "id": "evil_axe:damage",
+          "amount": 16.5,
+          "operation": "add_value",
+          "slot": "mainhand",
+          "display": {
+            "type": "hidden"
+          }
+        },
+        {
+          "type": "minecraft:attack_speed",
+          "id": "evil_axe:speed",
+          "amount": -3.52,
+          "operation": "add_value",
+          "slot": "mainhand",
+          "display": {
+            "type": "hidden"
+          }
+        },
+        {
+          "type": "minecraft:max_health",
+          "id": "evil_axe:hp",
+          "amount": -8,
+          "operation": "add_value",
+          "slot": "mainhand",
+          "display": {
+            "type": "hidden"
+          }
+        }
+      ],
+      "minecraft:lore": [
+        {
+          "text": "HP最大値減少",
+          "color": "gold"
+        },
+        {
+          "text": "敵撃破時HP回復",
+          "color": "gold"
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": "利き手に持ったとき：",
+          "color": "gray"
+        },
+        {
+          "text": " 17.5 攻撃力",
+          "color": "dark_green"
+        },
+        {
+          "text": " 0.48 攻撃速度",
+          "color": "dark_green"
+        }
+      ],
+      "minecraft:rarity": "epic"
+    },
+    "count": 1
+  }
+}

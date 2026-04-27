@@ -1,0 +1,9 @@
+必須[custom_data={id:AAA},custom_name=AAA,custom_model_data={strings:[AAA]}]
+順次[enchantment_glint_override: true or false,rearity= rare or epic,attribute_modifiers, consumable, use_cooldown]
+
+攻撃力は基礎攻撃力(1)をattributeで加減算したものを表記
+攻撃速度は基礎攻撃速度(4)をattributeで加減算したものを表記
+
+loot magic:give/AAAでアイテム入手
+Evil_Swordは diamond_sword[consumable={consume_seconds:10000000,animation:"block",has_consume_particles:false},custom_data={id:Evil_Sword},custom_name=Evil_Sword,custom_model_data={strings:[Evil_Sword]},rarity="epic"]
+
