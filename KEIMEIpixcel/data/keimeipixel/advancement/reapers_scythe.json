@@ -1,7 +1,7 @@
 {
   "criteria": {
     "reapers_scythe": {
-      "trigger": "minecraft:consume_item",
+      "trigger": "minecraft:using_item",
       "conditions": {
         "item": {
         "predicates":{

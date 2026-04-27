@@ -11,7 +11,9 @@
     "keimeipixel:meteor_shower/set_velocity",
     "keimeipixel:pvp/matching/matching",
     "keimeipixel:pvp/start/count_down",
+    "keimeipixel:reapers_scythe/tick",
     "keimeipixel:players/sneak",
-    "keimeipixel:players/tick"
+    "keimeipixel:players/tick",
+    "keimeipixel:players/trigonometric_function/load"
   ]
 }

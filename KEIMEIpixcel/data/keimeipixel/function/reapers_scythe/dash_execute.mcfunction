@@ -1,15 +1,28 @@
 # クールダウンタグを付与
 tag @s add reapers_scythe_cd
 
-# 視線方向へ高速移動
-execute at @s rotated as @s run tp @s ^ ^ ^1.8
+kill @e[tag=dash_arrow,sort=nearest,limit=1]
+summon minecraft:arrow ~ ~ ~ {Tags:["dash_arrow"]}
+ride @s mount @e[type=arrow,sort=nearest,limit=1]
 
-# 落下を一瞬キャンセル（Y方向を上書き）
-# ※上下視線角度に応じて自動で斜め方向にも飛ぶ
+# Yaw取得 (-180〜180 → 0〜359に正規化)
+execute store result score @s yaw run data get entity @s Rotation[0] 1
+execute if score @s yaw matches -180..-1 run scoreboard players add @s yaw 360
+
+# Pitch取得
+execute store result score @s pitch run data get entity @s Rotation[1] 1
+
+# ルックアップテーブルでsin/cos取得
+function keimeipixel:players/trigonometric_function/lookup_yaw
+
+# Pitch別にY成分設定
+execute if score @s pitch matches ..-45 run scoreboard players set @s dash_y 12
+execute if score @s pitch matches -44..44 run scoreboard players set @s dash_y 3
+execute if score @s pitch matches 45.. run scoreboard players set @s dash_y -5
+
+# Motionを方向別に設定
+function keimeipixel:players/trigonometric_function/apply_motion
 
 # パーティクル演出
 execute at @s run particle minecraft:sonic_boom ~ ~ ~ 0 0 0 0 1
 execute at @s run playsound minecraft:entity.breeze.wind_burst master @a ~ ~ ~ 1 1.5
-
-# クールダウン解除（4秒後 = 80tick）
-schedule function reapers_scythe:cd_remove 80t
