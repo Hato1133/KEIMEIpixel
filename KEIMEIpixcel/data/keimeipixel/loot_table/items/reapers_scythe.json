@@ -19,7 +19,7 @@
                                     "can_always_eat": true
                                 },
                                 "minecraft:consumable": {
-                                    "consume_seconds": 0.05,
+                                    "consume_seconds": 364364,
                                     "animation": "none",
                                     "has_consume_particles": false,
                                     "sound": "entity.egg.throw"
@@ -32,12 +32,12 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": "右クリックで空中ダッシュ",
+                                        "text": "浮遊時右クリックで空中ダッシュ",
                                         "color":"gold",
                                         "italic": false
                                     },
                                     {
-                                        "text": "クールタイム4秒",
+                                        "text": "クールタイム3秒",
                                         "color": "aqua",
                                         "italic": false
                                     }
@@ -47,12 +47,35 @@
                                     "color": "dark_red"
                                 }
                             ],
-                                "minecraft:enchantment_glint_override": true
+                                "minecraft:enchantment_glint_override": true,
+                                
+                                "minecraft:attack_range": {
+                                    "max_reach": 3.0,
+                                    "hitbox_margin": 0.5
+                                },
+                                "swing_animation":{
+                                    "duration": 10
+                                },
+                                "minecraft:unbreakable": {
+                                },
+                                "attribute_modifiers": [
+                                    {
+                                        "id": "generic.attack_speed",
+                                        "amount": -0.7,
+                                        "type": "attack_speed",
+                                        "slot": "mainhand",
+                                        "operation": "add_multiplied_base",
+                                        "display": {
+                                            "type": "hidden"
+                                            
+                                        }
+                                    }
+                                ]
                             }
                         }
                     ]
                 }
             ]
         }
-    ]
+]
 }

@@ -1,6 +1,7 @@
 # クールダウンタグを付与
 tag @s add reapers_scythe_cd
 
+
 kill @e[tag=dash_arrow,sort=nearest,limit=1]
 summon minecraft:arrow ~ ~ ~ {Tags:["dash_arrow"]}
 ride @s mount @e[type=arrow,sort=nearest,limit=1]
@@ -26,5 +27,3 @@ function keimeipixel:players/trigonometric_function/apply_motion
 # パーティクル演出
 execute at @s run particle minecraft:sonic_boom ~ ~ ~ 0 0 0 0 1
 execute at @s run playsound minecraft:entity.breeze.wind_burst master @a ~ ~ ~ 1 1.5
-
-data modify entity @s Motion[1] insert 1 value {strage:[2]}
