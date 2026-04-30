@@ -15,4 +15,4 @@ execute as @e[tag=fire_circle_ending] if score @s fire_circle_load matches 230..
 execute as @e[tag=fire_summoner] at @s run setblock ~ ~ ~ minecraft:fire keep
 execute as @e[tag=fire_summoner] if score @s fire_circle_load matches 10.. at @s run kill @s
 execute as @e[tag=fire_circle_marker_new] if score @s fire_circle_load matches 400.. at @s run kill @s
-scoreboard players add @a replace_timer 1
+scoreboard players add @a[tag=fire_user] replace_timer 1
