@@ -1,3 +1,4 @@
+$execute as @a[predicate=!keimeipixel:$(predicate),scores={$(score_board)=1..3}] at @s run title @s actionbar [{"text":""}]
 $execute as @a[predicate=keimeipixel:$(predicate),scores={$(score_board)=1..3}] at @s run title @s actionbar [{"text":"||||||||||||||||||||","color":"green"},{"text":"","color":"gray"}]
 $execute as @a[predicate=keimeipixel:$(predicate),scores={$(score_board)=4..6}] at @s run title @s actionbar [{"text":"|||||||||||||||||||","color":"green"},{"text":"|","color":"gray"}]
 $execute as @a[predicate=keimeipixel:$(predicate),scores={$(score_board)=7..9}] at @s run title @s actionbar [{"text":"||||||||||||||||||","color":"green"},{"text":"||","color":"gray"}]
