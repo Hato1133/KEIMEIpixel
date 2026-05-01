@@ -1,3 +1,3 @@
 scoreboard players add @a eartharmor_replace 1
-loot give @a[gamemode=!creative,gamemode=!spectator,scores={eartharmor_replace=2..},tag=eartharmor_user] loot keimeipixel:items/eartharmor
-tag @a[tag=eartharmor_user,scores={eartharmor_replace=2..}] remove eartharmor_user
+execute as @a[tag=eartharmor_user] at @s run function keimeipixel:20_second {predicate:have_eartharmor,score_board:eartharmor_replace}
+tag @a[tag=eartharmor_user,scores={eartharmor_replace=398..400}] remove eartharmor_user
