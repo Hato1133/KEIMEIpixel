@@ -30,4 +30,4 @@ $execute as @a[predicate=keimeipixel:$(predicate),scores={$(score_board)=173..18
 $execute as @a[predicate=keimeipixel:$(predicate),scores={$(score_board)=181..190}] at @s run title @s actionbar [{"text":"||","color":"green"},{"text":"||||||||||||||||||||||||||||","color":"gray"}]
 $execute as @a[predicate=keimeipixel:$(predicate),scores={$(score_board)=191..200}] at @s run title @s actionbar [{"text":"|","color":"green"},{"text":"|||||||||||||||||||||||||||||","color":"gray"}]
 
-$execute as @a[predicate=keimeipixel:$(predicate),scores={$(score_board)=60..99}] at @s run title @s actionbar [{"text":""}]
+$execute as @a[predicate=keimeipixel:$(predicate),scores={$(score_board)=198..200}] at @s run title @s actionbar [{"text":""}]

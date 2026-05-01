@@ -3,7 +3,7 @@ execute as @e[tag=fire_circle_marker_new] at @s run particle minecraft:copper_fi
 execute as @e[tag=fire_circle_marker_new] at @s unless block ~ ~-0.6 ~ #minecraft:air run tag @s add fire_circle_marker_gnd
 execute as @e[type=!player] if entity @e[tag=fire_circle_marker_new,distance=..2] at @s run summon armor_stand ~ ~ ~ {Tags:["fire_circle_marker_gnd"]}
 execute as @e[tag=fire_circle_marker_gnd] at @s run summon lightning_bolt ~ ~ ~
-execute as @e[tag=fire_circle_marker_gnd] at @s run summon armor_stand ~ ~ ~ {Invulnerable:1b,Tags:["fire_circle_ending"]}
+execute as @e[tag=fire_circle_marker_gnd] at @s run summon armor_stand ~ ~ ~ {Invisible:1b,Tags:["fire_circle_ending"]}
 execute as @e[tag=fire_circle_ending] at @s run scoreboard players add @s fire_circle_load 1
 execute as @e[tag=fire_summoner] at @s run scoreboard players add @s fire_circle_load 1
 execute as @e[tag=fire_circle_marker_new] run scoreboard players add @s fire_circle_load 1
@@ -15,4 +15,9 @@ execute as @e[tag=fire_circle_ending] if score @s fire_circle_load matches 230..
 execute as @e[tag=fire_summoner] at @s run setblock ~ ~ ~ minecraft:fire keep
 execute as @e[tag=fire_summoner] if score @s fire_circle_load matches 10.. at @s run kill @s
 execute as @e[tag=fire_circle_marker_new] if score @s fire_circle_load matches 400.. at @s run kill @s
-scoreboard players add @a[tag=fire_user] replace_timer 1
+
+function keimeipixel:players/countdown/10_second {predicate:have_firecircle,score_board:replace_timer}
+execute as @a[tag=fire_user] at @s run scoreboard players add @s replace_timer 1
+execute as @a[tag=fire_user,scores={replace_timer=200..}] at @s run tag @s remove fire_user
+execute as @a[tag=fire_user,scores={replace_timer=200..}] at @s run scoreboard players reset @s replace_timer
+execute as @a[tag=!fire_user] at @s run scoreboard players reset @s replace_timer
