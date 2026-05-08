@@ -1,0 +1,6 @@
+
+execute as @e[tag=iron_ingot_gen] run scoreboard players remove @s[scores={iron_ingot_timer=0..}] iron_ingot_timer 1
+
+execute as @e[tag=iron_ingot_gen] at @s run execute if score @s iron_ingot_timer matches 0 run summon item ~ ~1 ~ {Item:{id:"minecraft:music_disc_11"},Components:{"!minecraft:jukebox_playable": {},"minecraft:item_model": "minecraft:iron_ingot","minecraft:max_stack_size": 64,"minecraft:custom_data": "{ib:{Id:iron_ingot_rare}}","minecraft:lore": [{"text": "珍しい鉄のインゴット","italic": false},{"text": "自陣に持ち帰ると2ポイント獲得","italic": false,"color": "aqua"}],"minecraft:item_name": [{"text": "Iron Ingot","color": "aqua"}],"minecraft:enchantment_glint_override": true}}
+execute as @e[tag=iron_ingot_gen,scores={iron_ingot_timer=0}] at @s run execute store result score @s iron_ingot_timer run random value 400..800
+execute as @e[type=minecraft:interaction,tag=iron_ingot_gen] at @s run tp @e[type=item,nbt={custom_data:{ib:{Id:"iron_ingot_rare"}},custom_data:{ib:{Id:"iron_ingot_normal"}}},distance=..1] ~ ~ ~

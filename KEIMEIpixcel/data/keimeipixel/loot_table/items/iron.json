@@ -1,0 +1,75 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "minecraft:music_disc_11",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "!minecraft:jukebox_playable": {},
+                                "minecraft:item_model": "minecraft:iron_ingot",
+                                "minecraft:max_stack_size": 64,
+                                "minecraft:custom_data": "{ib:{Id:\"iron_ingot_rare\"}}",
+                                "minecraft:lore": [
+                                    {
+                                        "text": "珍しい鉄のインゴット",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "自陣に持ち帰ると2ポイント獲得",
+                                        "italic": false,
+                                        "color": "aqua"
+                                    }
+                                ],
+                                "minecraft:item_name": [{
+                                    "text": "Iron Ingot",
+                                    "color": "aqua"
+                                }
+                                ],
+                                "minecraft:enchantment_glint_override": true
+                        }
+                    }
+                ]
+                },
+                {
+                    
+                        "type": "minecraft:item",
+                        "weight": 9,
+                        "name": "minecraft:music_disc_11",
+                        "functions": [
+                            {
+                                "function": "minecraft:set_components",
+                                "components": {
+                                    "!minecraft:jukebox_playable": {},
+                                    "minecraft:item_model": "minecraft:iron_ingot",
+                                    "minecraft:max_stack_size": 64,
+                                    "minecraft:custom_data": "{ib:{Id:\"iron_ingot_normal\"}}",
+                                    "minecraft:lore": [
+                                        {
+                                            "text": "どこにでもある鉄のインゴット",
+                                            "italic": false
+                                        },
+                                        {
+                                            "text": "自陣に持ち帰ると1ポイント獲得",
+                                            "italic": false,
+                                            "color": "aqua"
+                                        }
+                                    ],
+                                    "minecraft:item_name": [{
+                                        "text": "Iron Ingot",
+                                        "color": "white"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                }
+            ]
+                    }
+                ]
+            }

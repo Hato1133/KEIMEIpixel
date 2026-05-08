@@ -13,6 +13,7 @@
     "keimeipixel:reapers_scythe/tick",
     "keimeipixel:players/sneak",
     "keimeipixel:players/tick",
-    "keimeipixel:players/trigonometric_function/load"
+    "keimeipixel:players/trigonometric_function/load",
+    "keimeipixel:pvp/ingot_gen/iron/tick"
   ]
 }
