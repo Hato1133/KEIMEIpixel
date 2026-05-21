@@ -1,0 +1,12 @@
+{
+    "values": [
+        "minecraft:armor_stand",
+        "#minecraft:boat",
+        "minecraft:interaction",
+        "minecraft:marker",
+        "minecraft:snowball",
+        "minecraft:egg",
+        "minecraft:arrow",
+        "minecraft:leash_knot"
+    ]
+  }
