@@ -4,7 +4,8 @@ scoreboard objectives add iron_ingot_random dummy
 execute as @e[tag=iron_ingot_gen] run scoreboard players remove @s[scores={iron_ingot_timer=0..}] iron_ingot_timer 1
 execute as @e[tag=iron_ingot_gen] at @s run execute if score @s iron_ingot_timer matches 0 run execute store result score @s iron_ingot_random run random value 1..10
 execute as @e[tag=iron_ingot_gen,scores={iron_ingot_random=1}] at @s run execute if score @s iron_ingot_timer matches 0 run summon item ~ ~1 ~ \
-{                                                               \
+{      \
+Tags:["ingots"],                                                          \
 Item:{                                                          \
     id:"minecraft:music_disc_11",                               \
     components:{                                                \
@@ -33,7 +34,8 @@ Item:{                                                          \
 }
 
 execute as @e[tag=iron_ingot_gen,scores={iron_ingot_random=2..10}] at @s run execute if score @s iron_ingot_timer matches 0 run summon item ~ ~1 ~ \
-{                                                               \
+{      \
+Tags:["ingots"],                                                          \
 Item:{                                                          \
     id:"minecraft:music_disc_11",                               \
     components:{                                                \
@@ -68,9 +70,10 @@ execute as @e[tag=iron_ingot_gen,scores={iron_ingot_timer=0}] at @s run execute 
 scoreboard objectives add gold_ingot_timer dummy
 scoreboard objectives add gold_ingot_random dummy
 execute as @e[tag=gold_ingot_gen] run scoreboard players remove @s[scores={gold_ingot_timer=0..}] gold_ingot_timer 1
-execute as @e[tag=] at @s run execute if score @s gold_ingot_timer matches 0 run execute store result score @s gold_ingot_random run random value 1..10
-execute as @e[tag=gold_ingot_gen,scores={gold_ingot_random=1}] at @s run execute if score @s gold_ingot_timer matches 0 run summon item ~ ~1 ~ \
-{                                                               \
+execute as @e[tag=gold_ingot_gen] at @s run execute if score @s gold_ingot_timer matches 0 run execute store result score @s gold_ingot_random run random value 1..10
+execute as @e[tag=gold_ingot_gen,scores={gold_ingot_random=1}] at @s run execute if score @s gold_ingot_timer matches 1 run summon item ~ ~1 ~ \
+{   \       
+Tags:["ingots"],                                                     \
 Item:{                                                          \
     id:"minecraft:music_disc_11",                               \
     components:{                                                \
@@ -98,8 +101,9 @@ Item:{                                                          \
     }                                                           \
 }
 
-execute as @e[tag=gold_ingot_gen,scores={gold_ingot_random=2..10}] at @s run execute if score @s gold_ingot_timer matches 0 run summon item ~ ~1 ~ \
-{                                                               \
+execute as @e[tag=gold_ingot_gen,scores={gold_ingot_random=2..10}] at @s run execute if score @s gold_ingot_timer matches 1 run summon item ~ ~1 ~ \
+{   \       
+Tags:["ingots"],                                                     \
 Item:{                                                          \
     id:"minecraft:music_disc_11",                               \
     components:{                                                \
@@ -136,7 +140,8 @@ scoreboard objectives add emerald_ingot_random dummy
 execute as @e[tag=emerald_ingot_gen] run scoreboard players remove @s[scores={emerald_ingot_timer=0..}] emerald_ingot_timer 1
 execute as @e[tag=emerald_ingot_gen] at @s run execute if score @s emerald_ingot_timer matches 0 run execute store result score @s emerald_ingot_random run random value 1..10
 execute as @e[tag=emerald_ingot_gen,scores={emerald_ingot_random=1}] at @s run execute if score @s emerald_ingot_timer matches 0 run summon item ~ ~1 ~ \
-{                                                               \
+{   \       
+Tags:["ingots"],                                                     \
 Item:{                                                          \
     id:"minecraft:music_disc_11",                               \
     components:{                                                \
@@ -165,7 +170,8 @@ Item:{                                                          \
 }
 
 execute as @e[tag=emerald_ingot_gen,scores={emerald_ingot_random=2..10}] at @s run execute if score @s emerald_ingot_timer matches 0 run summon item ~ ~1 ~ \
-{                                                               \
+{   \
+Tags:["ingots"],                                                            \
 Item:{                                                          \
     id:"minecraft:music_disc_11",                               \
     components:{                                                \
@@ -195,3 +201,6 @@ Item:{                                                          \
 }
 
 execute as @e[tag=emerald_ingot_gen,scores={emerald_ingot_timer=0}] at @s run execute store result score @s emerald_ingot_timer run random value 600..1000
+scoreboard objectives add ingot_timer dummy
+execute as @e[tag=ingots] at @s run scoreboard players add @s ingot_timer 1
+execute as @e[tag=ingots] at @s run execute if score @s ingot_timer matches 600 run kill @s
