@@ -1,0 +1,1 @@
+$tp @s @e[name=$(location),limit=1]
