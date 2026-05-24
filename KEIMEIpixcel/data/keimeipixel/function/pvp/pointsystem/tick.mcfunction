@@ -1,2 +1,12 @@
-execute if entity @e[x=-325.5,y=-25,z=250.5,distance=..1,type=item,nbt={Item:{count:1,components:{"minecraft:custom_data":{ib:{Id:"iron_ingot_normal"}}}}}] run scoreboard players add @a[team=red] red_points 1
-execute as @e[x=-325.5,y=-25,z=250.5,distance=..1,type=item,nbt={Item:{count:1,components:{"minecraft:custom_data":{ib:{Id:"iron_ingot_normal"}}}}}] run kill @s
+function keimeipixel:pvp/pointsystem/points_red {ingot:"iron_ingot_normal",points:1}
+function keimeipixel:pvp/pointsystem/points_red {ingot:"iron_ingot_rare",points:2}
+function keimeipixel:pvp/pointsystem/points_red {ingot:"gold_ingot_normal",points:4}
+function keimeipixel:pvp/pointsystem/points_red {ingot:"gold_ingot_rare",points:8}
+function keimeipixel:pvp/pointsystem/points_red {ingot:"emerald_ingot_normal",points:9}
+function keimeipixel:pvp/pointsystem/points_red {ingot:"emerald_ingot_rare",points:18}
+function keimeipixel:pvp/pointsystem/points_blue {ingot:"iron_ingot_normal",points:1}
+function keimeipixel:pvp/pointsystem/points_blue {ingot:"iron_ingot_rare",points:2}
+function keimeipixel:pvp/pointsystem/points_blue {ingot:"gold_ingot_normal",points:4}
+function keimeipixel:pvp/pointsystem/points_blue {ingot:"gold_ingot_rare",points:8}
+function keimeipixel:pvp/pointsystem/points_blue {ingot:"emerald_ingot_normal",points:9}
+function keimeipixel:pvp/pointsystem/points_blue {ingot:"emerald_ingot_rare",points:18}
