@@ -4,6 +4,7 @@ function keimeipixel:pvp/pointsystem/points_red {ingot:"gold_ingot_normal",point
 function keimeipixel:pvp/pointsystem/points_red {ingot:"gold_ingot_rare",points:8}
 function keimeipixel:pvp/pointsystem/points_red {ingot:"emerald_ingot_normal",points:9}
 function keimeipixel:pvp/pointsystem/points_red {ingot:"emerald_ingot_rare",points:18}
+
 function keimeipixel:pvp/pointsystem/points_blue {ingot:"iron_ingot_normal",points:1}
 function keimeipixel:pvp/pointsystem/points_blue {ingot:"iron_ingot_rare",points:2}
 function keimeipixel:pvp/pointsystem/points_blue {ingot:"gold_ingot_normal",points:4}
