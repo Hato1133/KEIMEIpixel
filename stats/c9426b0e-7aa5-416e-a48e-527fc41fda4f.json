@@ -1,0 +1,58 @@
+{
+  "stats": {
+    "minecraft:used": {
+      "minecraft:polished_tuff": 79,
+      "minecraft:lapis_block": 6,
+      "minecraft:waxed_oxidized_copper": 149,
+      "minecraft:chain_command_block": 7,
+      "minecraft:chiseled_tuff": 8,
+      "minecraft:waxed_chiseled_copper": 13,
+      "minecraft:red_concrete": 8,
+      "minecraft:iron_block": 3,
+      "minecraft:waxed_copper_block": 55,
+      "minecraft:water_bucket": 154,
+      "minecraft:repeating_command_block": 22,
+      "minecraft:waxed_oxidized_cut_copper_slab": 16,
+      "minecraft:light_blue_stained_glass": 15,
+      "minecraft:dirt": 1,
+      "minecraft:waxed_oxidized_cut_copper_stairs": 6,
+      "minecraft:chiseled_tuff_bricks": 39,
+      "minecraft:redstone_block": 28,
+      "minecraft:oak_slab": 2,
+      "minecraft:light": 2,
+      "minecraft:blue_concrete": 9,
+      "minecraft:beacon": 1,
+      "minecraft:waxed_copper_bulb": 30,
+      "minecraft:waxed_copper_grate": 1,
+      "minecraft:waxed_oxidized_copper_grate": 44,
+      "minecraft:barrier": 1,
+      "minecraft:tuff_bricks": 183,
+      "minecraft:gold_block": 9
+    },
+    "minecraft:dropped": {
+      "minecraft:stone": 1,
+      "minecraft:chain_command_block": 1,
+      "minecraft:repeating_command_block": 5
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 3416506,
+      "minecraft:walk_one_cm": 134799,
+      "minecraft:leave_game": 6,
+      "minecraft:walk_under_water_one_cm": 8350,
+      "minecraft:play_time": 3416506,
+      "minecraft:jump": 924,
+      "minecraft:time_since_death": 3416506,
+      "minecraft:drop": 7,
+      "minecraft:open_barrel": 2,
+      "minecraft:sprint_one_cm": 264573,
+      "minecraft:open_chest": 3,
+      "minecraft:inspect_dispenser": 3,
+      "minecraft:total_world_time": 3446395,
+      "minecraft:fly_one_cm": 807339,
+      "minecraft:walk_on_water_one_cm": 20335,
+      "minecraft:crouch_one_cm": 3325,
+      "minecraft:sneak_time": 4490
+    }
+  },
+  "DataVersion": 4671
+}

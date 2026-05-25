@@ -1,0 +1,43 @@
+{
+  "stats": {
+    "minecraft:killed": {
+      "minecraft:husk": 6
+    },
+    "minecraft:used": {
+      "minecraft:villager_spawn_egg": 59,
+      "minecraft:husk_spawn_egg": 5,
+      "minecraft:cobblestone_wall": 10,
+      "minecraft:mace": 8
+    },
+    "minecraft:dropped": {
+      "minecraft:mace": 2
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 27054,
+      "minecraft:walk_one_cm": 41306,
+      "minecraft:leave_game": 2,
+      "minecraft:mob_kills": 17,
+      "minecraft:walk_under_water_one_cm": 233,
+      "minecraft:damage_taken": 3000,
+      "minecraft:damage_dealt": 483,
+      "minecraft:play_time": 59309,
+      "minecraft:jump": 142,
+      "minecraft:time_since_death": 27053,
+      "minecraft:drop": 2,
+      "minecraft:sprint_one_cm": 34956,
+      "minecraft:open_chest": 1,
+      "minecraft:fall_one_cm": 7634,
+      "minecraft:swim_one_cm": 2392,
+      "minecraft:total_world_time": 59309,
+      "minecraft:fly_one_cm": 155986,
+      "minecraft:walk_on_water_one_cm": 538,
+      "minecraft:sneak_time": 71,
+      "minecraft:deaths": 12
+    },
+    "minecraft:killed_by": {
+      "minecraft:player": 3,
+      "minecraft:husk": 8
+    }
+  },
+  "DataVersion": 4671
+}

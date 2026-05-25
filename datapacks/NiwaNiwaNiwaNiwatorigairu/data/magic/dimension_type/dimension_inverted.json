@@ -1,0 +1,27 @@
+{
+  "attributes": {
+    "minecraft:visual/sky_color": "#10c625",
+    "minecraft:gameplay/bed_rule": {
+      "modifier": "override",
+      "argument": {
+        "can_sleep": "never",
+        "can_set_spawn": "never",
+        "explodes": false,
+        "error_message": "you can't sleep in this dimention!"
+      }
+    },
+    "minecraft:visual/water_fog_color": "#6b0872"
+  },
+  "has_skylight": false,
+  "has_ceiling": false,
+  "coordinate_scale": 0.1,
+  "ambient_light": 0.2,
+  "has_fixed_time": true,
+  "logical_height": 256,
+  "skybox": "overworld",
+  "infiniburn": "#minecraft:infiniburn_overworld",
+  "min_y": -64,
+  "height": 256,
+  "monster_spawn_light_level": 7,
+  "monster_spawn_block_light_limit": 7
+}
