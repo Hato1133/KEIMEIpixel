@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "Using Evil Sword": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": {
+              "id": "Evil_Sword"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "magic:using_evil_sword"
+  }
+}
