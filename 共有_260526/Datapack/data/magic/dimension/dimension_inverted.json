@@ -1,0 +1,48 @@
+{
+  "type": "magic:dimension_inverted",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "minecraft:overworld",
+    "biome_source": {
+      "type": "minecraft:multi_noise",
+      "biomes": [
+        {
+          "biome": "magic:biome_inverted_sea",
+          "parameters": {
+            "temperature": 0,
+            "humidity": 0,
+            "continentalness": [
+              -1,
+              0
+            ],
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": [
+              -1,
+              -0.3
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "magic:biome_inverted",
+          "parameters": {
+            "temperature": 0,
+            "humidity": 0,
+            "continentalness": [
+              0.1,
+              1
+            ],
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": [
+              -0.2,
+              1
+            ],
+            "offset": 0
+          }
+        }
+      ]
+    }
+  }
+}
