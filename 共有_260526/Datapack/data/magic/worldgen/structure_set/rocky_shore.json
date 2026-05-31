@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "magic:rocky_shore",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 20,
+    "separation": 2,
+    "salt": 3000003
+  }
+}
