@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "   ",
+    "111",
+    "   "
+  ],
+  "key": {
+    "1": "minecraft:tnt"
+  },
+  "result": {
+    "id": "minecraft:chicken_spawn_egg",
+    "components": {
+      "minecraft:custom_name": "Tnt_Bundle",
+      "minecraft:custom_model_data": {
+        "strings": [
+          "Tnt_Bundle"
+        ]
+      },
+      "minecraft:entity_data": {
+        "id": "minecraft:marker",
+        "Tags": [
+          "Tnt_Bundle"
+        ]
+      }
+    },
+    "count": 2
+  }
+}
