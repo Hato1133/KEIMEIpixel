@@ -585,7 +585,7 @@
                 "minecraft:entity_data": {
                   "id": "minecraft:marker",
                   "Tags": [
-                    "Web_Carpet_B"
+                    "Web_Carpet"
                   ]
                 },
                 "minecraft:custom_name": "Web_Carpet"
@@ -651,7 +651,7 @@
                 "minecraft:entity_data": {
                   "id": "minecraft:marker",
                   "Tags": [
-                    "Thin_Moss_Carpet_B"
+                    "Thin_Moss_Carpet"
                   ]
                 },
                 "minecraft:custom_name": "Thin_Moss_Carpet"
@@ -684,7 +684,7 @@
                 "minecraft:entity_data": {
                   "id": "minecraft:marker",
                   "Tags": [
-                    "Poster_1_B"
+                    "Poster_1"
                   ]
                 },
                 "minecraft:custom_name": "Poster_1"
@@ -717,7 +717,7 @@
                 "minecraft:entity_data": {
                   "id": "minecraft:marker",
                   "Tags": [
-                    "Withered_Vine_B"
+                    "Withered_Vine"
                   ]
                 },
                 "minecraft:custom_name": "Withered_Vine"
@@ -816,7 +816,7 @@
                 "minecraft:entity_data": {
                   "id": "minecraft:marker",
                   "Tags": [
-                    "Blue_Rose_B"
+                    "Blue_Rose"
                   ]
                 },
                 "minecraft:custom_name": "Blue_Rose"
@@ -853,6 +853,39 @@
                   ]
                 },
                 "minecraft:custom_name": "Spruce_Barricade"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chicken_spawn_egg",
+          "conditions": [],
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 64
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": {
+                  "strings": [
+                    "Blue_Slime_Block"
+                  ]
+                },
+                "minecraft:entity_data": {
+                  "id": "minecraft:marker",
+                  "Tags": [
+                    "Blue_Slime_Block"
+                  ]
+                },
+                "minecraft:custom_name": "Blue_Slime_Block"
               }
             }
           ]

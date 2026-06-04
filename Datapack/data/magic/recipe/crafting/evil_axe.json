@@ -2,14 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "pattern": [
-    "11 ",
-    "123",
+    " 11",
+    "121",
     " 2 "
   ],
   "key": {
     "1": "minecraft:command_block",
-    "2": "minecraft:stick",
-    "3": "minecraft:gold_ingot"
+    "2": "minecraft:stick"
   },
   "result": {
     "id": "minecraft:diamond_axe",

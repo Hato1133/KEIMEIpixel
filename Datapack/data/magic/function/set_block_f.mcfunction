@@ -7,5 +7,7 @@ $execute as @e[tag=$(Block_ID),type=marker] at @s if entity @a[sort=nearest,y_ro
 $execute as @e[tag=$(Block_ID),type=marker] at @s if entity @a[sort=nearest,y_rotation=-135..-45] run tp @s ~ ~ ~ -90 0
 $execute as @e[type=item_display,tag=$(Block_ID)] at @s rotated as @e[tag=$(Block_ID),type=marker,sort=nearest,distance=..0.1] run tp @s ~ ~0.5 ~ ~ ~
 $kill @e[tag=$(Block_ID),type=marker]
+$execute as @e[tag=$(Block_ID),type=interaction] at @s if data entity @s attack run summon item ~ ~ ~ {Item:{id:"minecraft:chicken_spawn_egg",\
+components:{"minecraft:custom_model_data":{strings:["$(Item_ID)"]},"minecraft:entity_data":{id:"minecraft:marker",Tags:["$(Block_ID)"]},"minecraft:custom_name":"$(Block_ID)"}}}
 $execute as @e[tag=$(Block_ID),type=interaction] at @s if data entity @s attack run kill @s
 $execute as @e[type=item_display,tag=$(Block_ID)] at @s if block ~ ~ ~ air positioned ~ ~-0.5 ~ unless entity @e[type=minecraft:interaction,distance=..0.1] run kill @s

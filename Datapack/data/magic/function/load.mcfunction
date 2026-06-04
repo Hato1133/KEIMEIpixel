@@ -10,3 +10,4 @@ recipe give @a magic:crafting/calm_wand
 recipe give @a magic:crafting/flame_wand
 recipe give @a magic:crafting/evil_axe
 recipe give @a magic:crafting/sparkle_wand
+recipe give @a magic:crafting/tnt_bundle

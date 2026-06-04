@@ -19,23 +19,25 @@ function magic:set_block_t {Block_ID:Stacked_Books,y_rotation:y_90,x_rotation:x_
 function magic:set_block_t {Block_ID:Concrete_Cube,y_rotation:y_90,x_rotation:x_0}
 function magic:set_block_t {Block_ID:Weathered_Concrete_Cube,y_rotation:y_90,x_rotation:x_0}
 function magic:set_block_t {Block_ID:Hollow_Oak_Log,y_rotation:y_90,x_rotation:x_90}
+function magic:set_block_t {Block_ID:Blue_Slime_Block,y_rotation:y_90,x_rotation:x_0}
 #Set_Block/F_Hit
-function magic:set_block_f {Block_ID:Web_Carpet_B,width:1.0f,height:0.1f}
-function magic:set_block_f {Block_ID:Mossy_Cobblestone_Path,width:1.0f,height:0.1f}
-function magic:set_block_f {Block_ID:Thin_Moss_Carpet_B,width:1.0f,height:0.1f}
-function magic:set_block_f {Block_ID:Poster_1_B,width:0.7f,height:1.0f}
-function magic:set_block_f {Block_ID:Withered_Vine_B,width:0.7f,height:1.0f}
-function magic:set_block_f {Block_ID:Tnt_Bundle,width:0.7f,height:0.4f}
-function magic:set_block_f {Block_ID:Nintendo_Switch,width:0.7f,height:0.1f}
-function magic:set_block_f {Block_ID:Blue_Rose_B,width:0.6f,height:0.9f}
-function magic:set_block_f {Block_ID:Spruce_Barricade,width:1.0f,height:1.0f}
+function magic:set_block_f {Block_ID:Web_Carpet,Item_ID:Web_Carpet_I,width:1.0f,height:0.1f}
+function magic:set_block_f {Block_ID:Mossy_Cobblestone_Path,Item_ID:Mossy_Cobblestone_Path,width:1.0f,height:0.1f}
+function magic:set_block_f {Block_ID:Thin_Moss_Carpet,Item_ID:Thin_Moss_Carpet_I,width:1.0f,height:0.1f}
+function magic:set_block_f {Block_ID:Poster_1,Item_ID:Poster_1_I,width:0.7f,height:1.0f}
+function magic:set_block_f {Block_ID:Withered_Vine,Item_ID:Withered_Vine_I,width:0.7f,height:1.0f}
+function magic:set_block_f {Block_ID:Tnt_Bundle,Item_ID:Tnt_Bundle,width:0.7f,height:0.4f}
+function magic:set_block_f {Block_ID:Nintendo_Switch,Item_ID:Nintendo_Switch,width:0.7f,height:0.1f}
+function magic:set_block_f {Block_ID:Blue_Rose,Item_ID:Blue_Rose_I,width:0.6f,height:0.9f}
+function magic:set_block_f {Block_ID:Spruce_Barricade,Item_ID:Spruce_Barricade,width:1.0f,height:1.0f}
 
 #Tnt_Bundle
 execute as @e[tag=Tnt_Bundle,type=interaction] at @s if data entity @s interaction run scoreboard players add @s Ex_C 1
-execute as @e[tag=Tnt_Bundle,scores={Ex_C=1..39}] at @s if data entity @s interaction run particle minecraft:flame ~ ~ ~ 0.1 0.1 0.1 0.3 3
-execute as @e[tag=Tnt_Bundle,scores={Ex_C=40..}] at @s run summon creeper ~ ~ ~ {Fuse:0s,ExplosionRadius:7b}
-execute as @e[tag=Tnt_Bundle,scores={Ex_C=40..}] at @s run particle minecraft:lava ~ ~ ~ 2 2 2 1 80
-execute as @e[tag=Tnt_Bundle,scores={Ex_C=40..}] at @s if data entity @s interaction run kill @s
+execute as @e[tag=Tnt_Bundle,scores={Ex_C=..1}] at @s run playsound minecraft:block.note_block.imitate.creeper player @a ~ ~ ~ 1.5 1.3
+execute as @e[tag=Tnt_Bundle,scores={Ex_C=1..49}] at @s run particle minecraft:flame ~ ~ ~ 0.1 0.1 0.1 0.3 3 force @a
+execute as @e[tag=Tnt_Bundle,scores={Ex_C=50..}] at @s run summon creeper ~ ~ ~ {Fuse:0s,ExplosionRadius:7b}
+execute as @e[tag=Tnt_Bundle,scores={Ex_C=50..}] at @s run particle minecraft:lava ~ ~ ~ 2 2 2 1 80 force @a
+execute as @e[tag=Tnt_Bundle,scores={Ex_C=50..}] at @s run kill @s
 
 #Calme_Wand
 scoreboard players add @e[scores={Ca_Wand=1..}] Ca_Wand 1

@@ -14,4 +14,6 @@ execute as @e[tag=x_90] at @s if entity @a[sort=nearest,x_rotation=-90..-70] run
 $execute as @e[type=item_display,tag=$(Block_ID)] at @s rotated as @e[tag=$(Block_ID),type=marker,sort=nearest,distance=..0.1] run tp @s ~ ~0.5 ~ ~ ~
 $kill @e[tag=$(Block_ID),type=marker]
 #kill_t_f
+$execute as @e[type=item_display,tag=$(Block_ID)] at @s if block ~ ~ ~ air positioned ~ ~-0.5 ~ unless entity @e[type=minecraft:interaction,distance=..0.1] run summon item ~ ~ ~ \
+{Item:{id:"minecraft:chicken_spawn_egg",components:{"minecraft:custom_model_data":{strings:["$(Block_ID)"]},"minecraft:entity_data":{id:"minecraft:marker",Tags:["$(Block_ID)"]},"minecraft:custom_name":"$(Block_ID)"}}}
 $execute as @e[type=item_display,tag=$(Block_ID)] at @s if block ~ ~ ~ air positioned ~ ~-0.5 ~ unless entity @e[type=minecraft:interaction,distance=..0.1] run kill @s
