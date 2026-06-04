@@ -14,3 +14,7 @@ execute as @a[tag=game_player,scores={matching_timer=220..223},team=red] at @s r
 
 execute as @a[tag=game_player,scores={matching_timer=220..223}] at @s run function keimeipixel:pvp/start/reset_matching
 execute as @a[tag=game_player,scores={matching_timer=230..233}] at @s run scoreboard players reset @s matching_timer
+
+function keimeipixel:pvp/timer/3min_timer
+
+give @a[tag=game_player] iron_sword{Unbreakable:1b} 1

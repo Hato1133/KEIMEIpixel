@@ -1,1 +1,1 @@
-$tp @s @e[name=$(location),limit=1]
+tp @s -26.5 0 -134.5 -90 0

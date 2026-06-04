@@ -21,5 +21,7 @@ execute if score #total_sec game_timer_tick > #0 game_timer_tick if score #total
 execute if score #sec game_timer_tick = #0 game_timer_tick run scoreboard players set #sec game_timer_tick 60
 
 
-execute if score #sec game_timer_tick >= #10 game_timer_tick run bossbar set minecraft:game_time_pvp name [{"text":"残り時間: ","color":"gold"},{"score":{"name":"#min","objective":"game_timer_tick"},"color":"green"},{"text":":","color":"green"},{"score":{"name":"#sec","objective":"game_timer_tick"},"color":"green"}]
-execute if score #sec game_timer_tick < #10 game_timer_tick run bossbar set minecraft:game_time_pvp name [{"text":"残り時間: ","color":"gold"},{"score":{"name":"#min","objective":"game_timer_tick"},"color":"green"},{"text":":0","color":"green"},{"score":{"name":"#sec","objective":"game_timer_tick"},"color":"green"}]
+execute if score #sec game_timer_tick >= #10 game_timer_tick run bossbar set minecraft:game_time_pvp name [{"score":{"name":"#points","objective":"red_points"},"color":"red","bold":true},{"text":"      "},{"text":"残り時間: ","color":"gold"},{"score":{"name":"#min","objective":"game_timer_tick"},"color":"green"},{"text":":","color":"green"},{"score":{"name":"#sec","objective":"game_timer_tick"},"color":"green"},{"text":"      "},{"score":{"name":"#points","objective":"blue_points"},"color":"blue","bold":true}]
+execute if score #sec game_timer_tick < #10 game_timer_tick run bossbar set minecraft:game_time_pvp name [{"score":{"name":"#points","objective":"red_points"},"color":"red","bold":true},{"text":"      "},{"text":"残り時間: ","color":"gold"},{"score":{"name":"#min","objective":"game_timer_tick"},"color":"green"},{"text":":0","color":"green"},{"score":{"name":"#sec","objective":"game_timer_tick"},"color":"green"},{"text":"      "},{"score":{"name":"#points","objective":"blue_points"},"color":"blue","bold":true}]
+
+execute if score #total_sec game_timer_tick = #0 game_timer_tick run function keimeipixel:pvp/start/end_game
