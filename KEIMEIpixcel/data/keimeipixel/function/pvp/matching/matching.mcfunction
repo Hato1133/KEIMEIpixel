@@ -2,11 +2,13 @@ scoreboard objectives add pvp_matching_blue dummy
 scoreboard objectives add pvp_matching_red dummy
 
 execute as @a[x=82,y=-15,z=15,dx=7,dy=6,dz=4] at @s run scoreboard players set @s pvp_matching_red 1
+execute as @a[x=82,y=-15,z=39,dx=7,dy=6,dz=5] at @s run tag @s remove game_end
 execute as @a[scores={pvp_matching_red=1},tag=!red_team_msg_f] at @s run tag @s add red_team_msg
 execute as @a[scores={pvp_matching_red=1},tag=red_team_msg] at @s run tellraw @s[tag=red_team_msg] [{text:"あなたは",color:"gold",bold:true},{text:"赤チーム",color:"red",bold:true},{text:"です!",color:"gold",bold:true}]
 execute as @a[x=82,y=-15,z=15,dx=7,dy=6,dz=4] at @s run function keimeipixel:pvp/matching/msg_join_redteam
 
 execute as @a[x=82,y=-15,z=39,dx=7,dy=6,dz=5] at @s run scoreboard players set @s pvp_matching_blue 1
+execute as @a[x=82,y=-15,z=39,dx=7,dy=6,dz=5] at @s run tag @s remove game_end
 execute as @a[scores={pvp_matching_blue=1},tag=!blue_team_msg_f] at @s run tag @s add blue_team_msg
 execute as @a[scores={pvp_matching_blue=1},tag=blue_team_msg] at @s run tellraw @s[tag=blue_team_msg] [{text:"あなたは",color:"gold",bold:true},{text:"青チーム",color:"blue",bold:true},{text:"です!",color:"gold",bold:true}]
 execute as @a[x=82,y=-15,z=39,dx=7,dy=6,dz=5] at @s run function keimeipixel:pvp/matching/msg_join_blueteam

@@ -14,5 +14,11 @@ clear @a[tag=game_player]
 team empty red
 team empty blue
 
-execute as @a[tag=game_player] at @s run function keimeipixel:dev/tp_lobby
+execute as @a[tag=game_player] at @s run tp @s 24.00 1.00 -137.98 -90 0
 execute as @a[tag=game_player] at @s run bossbar remove minecraft:game_time_pvp
+execute as @a[tag=game_player] at @s run tag @s add game_end
+
+execute as @a[tag=game_player] at @s run tag @s remove game_player
+
+
+

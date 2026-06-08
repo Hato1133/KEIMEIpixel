@@ -13,5 +13,11 @@ execute as @a[scores={pvp_matching_red=1}] at @s run tag @s add game_player
 execute as @a[scores={pvp_matching_blue=1}] at @s run tag @s add game_player
 execute as @a[tag=game_player] at @s run title @a times 0 1s 0
 
+execute as @a[tag=blue_team_msg_f] at @s run tag @s remove blue_team_msg_f
+execute as @a[tag=red_team_msg_f] at @s run tag @s remove red_team_msg_f
+
+execute as @a[tag=blue_team_msg] at @s run tag @s remove blue_team_msg
+execute as @a[tag=red_team_msg] at @s run tag @s remove red_team_msg
+
 scoreboard players set @a[tag=game_player] matching_timer 1
 
