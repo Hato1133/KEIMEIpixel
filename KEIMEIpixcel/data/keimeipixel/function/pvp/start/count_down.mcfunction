@@ -17,4 +17,4 @@ execute as @a[tag=game_player,scores={matching_timer=230..233}] at @s run scoreb
 
 function keimeipixel:pvp/timer/3min_timer
 
-give @a[tag=game_player] iron_sword{Unbreakable:1b} 1
+give @a[tag=game_player] iron_sword 1
