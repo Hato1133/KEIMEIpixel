@@ -1,0 +1,14 @@
+{
+  "textures": {
+    "bottom": "minecraft:block/thin_moss_carpet"
+  },
+  "elements": [
+    {
+      "from": [0, 0, 0],
+      "to": [16, 0.1, 16],
+      "faces": {
+        "up": { "texture": "#bottom", "uv": [0, 0, 16, 16] }
+      }
+    }
+  ]
+}

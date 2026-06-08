@@ -1,0 +1,6 @@
+{
+    "model":{
+        "type":"model",
+        "model":"minecraft:block/set_block"
+    }
+}
