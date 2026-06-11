@@ -16,6 +16,7 @@
     "keimeipixel:players/trigonometric_function/load",
     "keimeipixel:pvp/ingot_gen/iron/tick",
     "keimeipixel:pvp/pointsystem/tick",
-    "keimeipixel:pvp/timer/tick"
+    "keimeipixel:pvp/timer/tick",
+    "keimeipixel:players/respawn/tick"
   ] 
 }
